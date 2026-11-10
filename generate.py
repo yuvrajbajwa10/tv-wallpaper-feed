@@ -1,6 +1,7 @@
 """Writes feed.json: a fresh pick of wallpapers from pool.json under fixed slot names.
 
-The TV launcher downloads feed.json every few hours. When `version` changes it downloads each image and saves it
+The TV launcher downloads feed.json a couple of times a day. `version` is the ISO week, so the pick changes once a
+week however often this runs. When `version` changes the launcher downloads each image and saves it
 under its slot name (morning-1.jpg, ...), which the theme's wallpaper_moods groups by time of day.
 
     python generate.py https://<user>.github.io/<repo>
@@ -18,8 +19,8 @@ SLOTS = {"morning": 4, "evening": 3, "night": 3}
 def main(base):
     pool = json.loads((HERE / "pool.json").read_text(encoding="utf-8"))
     now = datetime.datetime.now(datetime.timezone.utc)
-    version = now.strftime("%Y-%m-%dT%H")
-    rng = random.Random(version)  # the same run hour always gives the same pick
+    version = now.strftime("%G-W%V")  # ISO year and week: one pick per week
+    rng = random.Random(version)  # the same week always gives the same pick
     by_mood = {mood: [p for p in pool if p["mood"] == mood] for mood in ("day", "dusk", "night")}
     morning = rng.sample(by_mood["day"], SLOTS["morning"])
     # Evening runs from noon to after sunset: sunset and dusk pictures first, topped up with unused daytime ones.

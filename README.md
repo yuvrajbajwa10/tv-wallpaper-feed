@@ -2,7 +2,7 @@
 
 A rotating set of Sikh gurdwara wallpapers for a TV home screen, in the spirit of Windows Spotlight.
 
-Every 6 hours a GitHub Action picks ten pictures from `pool/` (four for the morning, three for the afternoon and
+Every Monday a GitHub Action picks ten pictures from `pool/` (four for the morning, three for the afternoon and
 evening, three for the night), writes them to `feed.json` and publishes it on GitHub Pages. A home-screen launcher that
 reads the feed downloads the new set and shows it.
 

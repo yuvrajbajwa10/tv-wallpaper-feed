@@ -1,30 +1,30 @@
 {
- "version": "2026-11-10T01",
+ "version": "2026-W46",
  "images": [
   {
    "file": "morning-1.jpg",
-   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/bangla-sahib-front.jpg",
-   "caption": "Gurdwara Bangla Sahib, New Delhi"
+   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/harmandir-clouds.jpg",
+   "caption": "Sri Harmandir Sahib under a cloudy sky, Amritsar"
   },
   {
    "file": "morning-2.jpg",
-   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/bangla-sahib-arch.jpg",
-   "caption": "Gurdwara Bangla Sahib framed by an inlaid arch, New Delhi"
-  },
-  {
-   "file": "morning-3.jpg",
-   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/harmandir-day.jpg",
-   "caption": "Sri Harmandir Sahib (Golden Temple), Amritsar"
-  },
-  {
-   "file": "morning-4.jpg",
    "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/kesgarh-2.jpg",
    "caption": "Takht Sri Kesgarh Sahib, Anandpur Sahib"
   },
   {
+   "file": "morning-3.jpg",
+   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/hemkund-landscape.jpg",
+   "caption": "Gurdwara Sri Hemkund Sahib among the peaks, Uttarakhand"
+  },
+  {
+   "file": "morning-4.jpg",
+   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/kesgarh.jpg",
+   "caption": "Takht Sri Kesgarh Sahib, birthplace of the Khalsa"
+  },
+  {
    "file": "evening-1.jpg",
-   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/harmandir-orange-sky.jpg",
-   "caption": "Sri Harmandir Sahib under an orange sky, Amritsar"
+   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/harmandir-sunset.jpg",
+   "caption": "Sunset over Sri Harmandir Sahib, Amritsar"
   },
   {
    "file": "evening-2.jpg",
@@ -33,23 +33,23 @@
   },
   {
    "file": "evening-3.jpg",
-   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/harmandir-sunset.jpg",
-   "caption": "Sunset over Sri Harmandir Sahib, Amritsar"
+   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/harmandir-sarovar.jpg",
+   "caption": "Sri Harmandir Sahib across the sarovar, Amritsar"
   },
   {
    "file": "night-1.jpg",
-   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/harmandir-blue-hour.jpg",
-   "caption": "Sri Harmandir Sahib at blue hour, Amritsar"
+   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/harmandir-night-reflection.jpg",
+   "caption": "Night reflections at Sri Harmandir Sahib, Amritsar"
   },
   {
    "file": "night-2.jpg",
-   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/harmandir-night.jpg",
-   "caption": "Sri Harmandir Sahib at night, Amritsar"
+   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/sarovar-night.jpg",
+   "caption": "The sarovar and Sri Harmandir Sahib at night, Amritsar"
   },
   {
    "file": "night-3.jpg",
-   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/harmandir-night-wide.jpg",
-   "caption": "Sri Harmandir Sahib and the parikrama at night, Amritsar"
+   "url": "https://yuvrajbajwa10.github.io/tv-wallpaper-feed/pool/harmandir-night.jpg",
+   "caption": "Sri Harmandir Sahib at night, Amritsar"
   }
  ]
 }
