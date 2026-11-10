@@ -1,0 +1,42 @@
+name: Rotate wallpapers
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours; the TV checks the feed on the same cadence
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  rotate:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pick a new set
+        run: python3 generate.py "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+      - name: Commit feed.json
+        # Committing keeps the repository active, so GitHub does not pause this schedule after 60 quiet days.
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feed.json
+          git diff --cached --quiet || git commit -m "feed: $(python3 -c 'import json;print(json.load(open("feed.json"))["version"])')"
+          git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deploy
+        uses: actions/deploy-pages@v4
